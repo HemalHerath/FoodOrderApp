@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.crowderia.eatit.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/logo_eat_it"
+            android:layout_width="220dp"
+            android:layout_height="120dp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txtSlogan"
+            android:text="@string/slogan"
+            android:textColor="@android:color/white"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/SignUp"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:text="Sign Up"
+            android:shadowColor="@android:color/black"
+            android:background="@color/btnSignUp"
+            android:layout_width="0dp"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/SignIn"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:text="Sign In"
+            android:shadowColor="@android:color/black"
+            android:background="@color/btnSignActive"
+            android:layout_width="0dp"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
